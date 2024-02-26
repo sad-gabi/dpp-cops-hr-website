@@ -1,0 +1,124 @@
+* {
+    position: relative;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+div[role="img-contain"] {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div[role="img-cover"] {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    background-color: black;
+}
+
+img {
+    pointer-events: none;
+}
+
+#initSplash {
+    position: absolute;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    background-color: black;
+    overflow: hidden;
+    z-index: 999;
+    animation: initSplashAnim 1.5s ease forwards 1.5s;
+}
+
+#initSplashOverlay {
+    position: absolute;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    background-image: url(../images/pc_screen_overlay.jpg);
+    opacity: .05;
+}
+
+#initLogoContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fill-available;
+    width: 100vw;
+}
+
+#initSplashLogo {
+    width: 30%;
+    animation: initLogoAnim 1s steps(1) forwards;
+    filter: blur(1px);
+}
+
+#header {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 100vh;
+    width: -webkit-fill-available;
+    background-image: url(../images/headerbg.jpg);
+    background-size: cover;
+}
+
+#headerGabi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: -webkit-fill-available;
+}
+
+@media (max-width: 800px) {
+    #initSplashLogo {
+        width: 50%;
+    }
+}
+
+@keyframes initSplashAnim {
+    0% {
+        width: 100vw;
+    }
+    100% {
+        width: 0vw;
+    }
+}
+
+@keyframes initLogoAnim {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
