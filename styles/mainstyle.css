@@ -1,7 +1,18 @@
+:root {
+    --main-color: #fff;
+}
+
+@font-face {
+    font-family: MainFont;
+    src: url(../fonts/KodeMono-VariableFont_wght.ttf);
+}
+
 * {
     position: relative;
     user-select: none;
     -webkit-user-drag: none;
+    font-family: MainFont;
+    color: var(--main-color);
 }
 
 div[role="img-contain"] {
