@@ -75,6 +75,10 @@ img {
     filter: blur(1px);
 }
 
+#headerContainer {
+    display: flex;
+}
+
 #header {
     display: flex;
     align-items: end;
@@ -123,6 +127,10 @@ img {
 @media (max-width: 1200px) {
     #initSplashLogo {
         width: 50%;
+    }
+
+    #headerContainer {
+        flex-direction: column;
     }
 
     #headerLogo {
