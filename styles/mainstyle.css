@@ -22,6 +22,7 @@ html, body {
     height: 100svh;
     width: 100vw;
     background-color: black;
+    overflow: hidden;
 }
 
 img {
@@ -31,7 +32,7 @@ img {
 #initSplash {
     position: absolute;
     height: 100svh;
-    width: -webkit-fill-available;
+    width: 100vw;
     background-color: black;
     overflow: hidden;
     z-index: 999;
@@ -40,8 +41,8 @@ img {
 
 #initSplashOverlay {
     position: absolute;
-    height: -webkit-fill-available;
-    width: -webkit-fill-available;
+    height: 100svh;
+    width: 100vw;
     background-image: url(../images/pc_screen_overlay.jpg);
     opacity: .05;
 }
@@ -66,7 +67,7 @@ img {
     align-items: end;
     justify-content: end;
     height: 100svh;
-    width: -webkit-fill-available;
+    width: 100vw;
     background-image: url(../images/headerbg.jpg);
     background-size: cover;
 }
