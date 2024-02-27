@@ -84,7 +84,7 @@ img {
     align-items: end;
     justify-content: end;
     height: 100svh;
-    width: 100vw;
+    width: 40vw;
     background-image: url(../images/headerbg.jpg);
     background-size: cover;
 }
@@ -104,10 +104,17 @@ img {
     text-shadow: var(--main-text-shadow);
 }
 
+#headerFade {
+    position: absolute;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-image: linear-gradient(to bottom, #00000000, #00000000, #00000000, #000000);
+}
+
 #menuButton {
     position: fixed;
     top: 20px;
-    left: 20px;
+    right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,18 +136,16 @@ img {
         width: 50%;
     }
 
+    #header {
+        width: 100vw;
+    }
+
     #headerContainer {
         flex-direction: column;
     }
 
     #headerLogo {
         width: 60vw;
-    }
-
-    #menuButton {
-        top: 20px;
-        right: 20px;
-        left: auto;
     }
 }
 
