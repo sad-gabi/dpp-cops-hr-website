@@ -1,5 +1,7 @@
 :root {
     --main-color: #fff;
+    --main-text-shadow: 0 0 10px #000;
+    --bg-color-1: #000;
 }
 
 @font-face {
@@ -90,6 +92,34 @@ img {
     height: 100svh;
 }
 
+#headerText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 6vh;
+    text-shadow: var(--main-text-shadow);
+}
+
+#menuButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: var(--bg-color-1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 998;
+}
+
+#menuButton:active {
+    scale: 0.9;
+}
+
 @media (max-width: 1200px) {
     #initSplashLogo {
         width: 50%;
@@ -97,6 +127,12 @@ img {
 
     #headerLogo {
         width: 60vw;
+    }
+
+    #menuButton {
+        top: 20px;
+        right: 20px;
+        left: auto;
     }
 }
 
