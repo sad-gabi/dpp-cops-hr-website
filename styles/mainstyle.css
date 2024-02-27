@@ -131,7 +131,7 @@ img {
     scale: 0.9;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
     #initSplashLogo {
         width: 50%;
     }
